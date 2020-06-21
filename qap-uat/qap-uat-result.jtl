@@ -1,0 +1,27 @@
+timeStamp	elapsed	label	responseCode	responseMessage	threadName	dataType	success	failureMessage	bytes	sentBytes	grpThreads	allThreads	Latency	IdleTime	Connect
+1592696213853	317	Version Check	200	OK	Student 1-3	text	true		290	154	3	4	317	0	233
+1592696212920	1255	Teacher - Login	200	OK	Teacher 2-1	text	true		718	287	1	4	1255	0	1170
+1592696215691	227	Version Check	200	OK	Student 1-1	text	true		290	154	3	4	227	0	183
+1592696217139	217	Version Check	200	OK	Student 1-2	text	true		290	154	3	4	217	0	173
+1592696217436	815	Teacher - Get Exam Info	200	OK	Teacher 2-1	text	true		886	617	1	4	815	0	176
+1592696218385	217	Student - Login	200	OK	Student 1-1	text	true		632	373	3	4	217	0	164
+1592696220587	215	Student - Login	200	OK	Student 1-3	text	true		632	373	3	4	215	0	168
+1592696221165	544	Teacher - Get Monitor Info	200	OK	Teacher 2-1	text	true		90715	598	1	4	411	0	163
+1592696223943	213	Student - Login	200	OK	Student 1-2	text	true		632	373	3	4	213	0	163
+1592696226313	215	Student - Get Student Info	200	OK	Student 1-1	text	true		334	674	3	4	215	0	166
+1592696226762	228	Student - Get Student Info	200	OK	Student 1-3	text	true		333	674	3	4	228	0	170
+1592696226895	233	Student - Get Student Info	200	OK	Student 1-2	text	true		333	674	3	4	233	0	175
+1592696231362	236	Student - Request Exam	200	OK	Student 1-2	text	true		209	1268	3	4	236	0	176
+1592696231426	229	Student - Request Exam	200	OK	Student 1-3	text	true		209	1268	3	4	229	0	170
+1592696232742	228	Student - Request Exam	200	OK	Student 1-1	text	true		209	1269	3	4	228	0	162
+1592696236607	960	Student - Download Exam	200	OK	Student 1-2	text	true		1060496	693	3	4	218	0	167
+1592696238411	969	Student - Download Exam	200	OK	Student 1-1	text	true		1060496	693	3	4	212	0	164
+1592696239285	934	Student - Download Exam	200	OK	Student 1-3	text	true		1060496	693	3	4	215	0	168
+1592696242160	248	Student - Get Seconds to Start	200	OK	Student 1-2	text	true		423	643	3	4	248	0	201
+1592696244156	428	Student - Get Seconds to Start	200	OK	Student 1-1	text	true		423	643	3	4	428	0	378
+1592696246129	218	Student - Get Seconds to Start	200	OK	Student 1-3	text	true		423	643	3	4	218	0	172
+1592696287767	335	Teacher - Get Monitor Info	200	OK	Teacher 2-1	text	true		90715	598	1	4	258	0	179
+1592696214295	1694	[Teacher Dashboard]	200	Number of samples in transaction : 3, number of failing samples : 0	Teacher 2-1		true		182316	1813	1	4	1484	72116	518
+1592696308251	421	Student - Submit Response	200	OK	Student 1-1	text	true		488	44757	3	3	421	0	190
+1592696314482	396	Student - Submit Response	200	OK	Student 1-2	text	true		488	44756	2	2	396	0	167
+1592696325423	498	Student - Submit Response	200	OK	Student 1-3	text	true		488	44756	1	1	498	0	272

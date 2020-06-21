@@ -1,0 +1,67 @@
+helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+helm install distributed-jmeter stable/distributed-jmeter
+
+kubectl get pods -l app.kubernetes.io/component=master -o jsonpath='{.items[*].metadata.name}'
+set MASTER_NAME=distributed-jmeter-master-757dc66498-pvfzs
+
+kubectl cp google.jmx %MASTER_NAME%:/jmeter
+
+kubectl get pods -l app.kubernetes.io/component=server -o jsonpath='{.items[*].status.podIP}'
+kubectl get pods -l app.kubernetes.io/component=server -o jsonpath='{.items[*].metadata.name}'
+
+kubectl exec -it %MASTER_NAME% -- jmeter -n -t /jmeter/google.jmx -R 10.244.2.36,10.244.3.23,10.244.2.38 -l /jmeter/google.jtl
+
+kubectl cp %MASTER_NAME%:/jmeter/google.jtl google.jtl
+
+---------------------------------------------------------------------------
+
+kubectl cp qap-uat-cloud.jmx %MASTER_NAME%:/jmeter
+kubectl cp qap-uat-exam-1mb.csv %MASTER_NAME%:/jmeter
+kubectl cp qap-uat-student.csv %MASTER_NAME%:/jmeter
+kubectl cp qap-uat-teacher.csv %MASTER_NAME%:/jmeter
+
+kubectl exec -it %MASTER_NAME% -- jmeter -n -t /jmeter/qap-uat-cloud.jmx -l /jmeter/qap-uat.jtl
+kubectl exec -it %MASTER_NAME% -- jmeter -n -t /jmeter/qap-uat-cloud.jmx -R 10.244.2.36,10.244.3.23,10.244.2.38 -l /jmeter/qap-uat-cloud.jtl
+kubectl exec -it %MASTER_NAME% -- jmeter -n -t /jmeter/qap-uat-cloud.jmx -R 10.244.2.36 -l /jmeter/qap-uat-cloud.jtl
+
+kubectl cp %MASTER_NAME%:/jmeter/qap-uat-cloud.jtl qap-uat-cloud.jtl
+
+kubectl exec -it %MASTER_NAME% -- jmeter -n -t /jmeter/qap-uat.jmx -R 
+
+helm delete distributed-jmeter
+
+-----------------------------------------------
+
+To get get a shell session on the master you only need to run:
+
+$ export MASTER_NAME=$(kubectl get pods -l app.kubernetes.io/component=master -o jsonpath='{.items[*].metadata.name}')
+$ kubectl exec -it $MASTER_NAME -- /bin/bash
+
+
+
+To copy your test plans to the master pod:
+$ kubectl cp sample.jmx $MASTER_NAME:/jmeter
+
+
+To run your test in all servers you need first a list of all servers IPs (comma-separated) and then you can run your test:
+set SERVER_IPS=$(kubectl get pods -l app.kubernetes.io/component=server -o jsonpath='{.items[*].status.podIP}' | tr ' ' ',')
+$ kubectl exec -it $MASTER_NAME -- jmeter -n -t /jmeter/sample.jmx -R $SERVER_IPS
+
+-------------------------------
+
+kubectl get pods -l app.kubernetes.io/component=server -o jsonpath='{.items[*].metadata.name}'
+
+distributed-jmeter-server-7cc9659bcb-2mjzg
+distributed-jmeter-server-7cc9659bcb-7m6rf
+distributed-jmeter-server-7cc9659bcb-vklzc
+
+kubectl exec -it distributed-jmeter-server-7cc9659bcb-2mjzg -- /bin/bash
+kubectl exec -it distributed-jmeter-server-7cc9659bcb-7m6rf -- /bin/bash
+kubectl exec -it distributed-jmeter-server-7cc9659bcb-vklzc -- /bin/bash
+
+-- kubectl cp qap-uat.jmx distributed-jmeter-server-7cc9659bcb-2mjzg:/jmeter/apache-jmeter-3.3/bin
+kubectl cp qap-uat-exam-1mb.csv distributed-jmeter-server-7cc9659bcb-vklzc:/jmeter
+kubectl cp qap-uat-student.csv distributed-jmeter-server-7cc9659bcb-vklzc:/jmeter
+kubectl cp qap-uat-teacher.csv distributed-jmeter-server-7cc9659bcb-vklzc:/jmeter
+
+kubectl cp distributed-jmeter-server-7cc9659bcb-vklzc:/jmeter/apache-jmeter-3.3/jmeter-server.log jmeter-server.log

@@ -1,0 +1,79 @@
+timeStamp	elapsed	label	responseCode	responseMessage	threadName	dataType	success	failureMessage	bytes	sentBytes	grpThreads	allThreads	Latency	IdleTime	Connect
+1592767477556	553	Version Check	200	OK	Student 1-2	text	true		290	154	3	4	553	0	510
+1592767478992	280	Version Check	200	OK	Student 1-3	text	true		290	154	3	4	280	0	236
+1592767479928	216	Version Check	200	OK	Student 1-3	text	true		290	154	3	4	216	0	173
+1592767480401	207	Version Check	200	OK	Student 1-1	text	true		290	154	3	4	207	0	165
+1592767481245	205	Version Check	200	OK	Student 1-2	text	true		290	154	3	4	205	0	162
+1592767482871	215	Teacher - Login	200	OK	Teacher 2-1	text	true		718	287	1	4	215	0	168
+1592767484517	213	Student - Login	200	OK	Student 1-2	text	true		632	373	3	4	213	0	163
+1592767485299	212	Student - Login	200	OK	Student 1-3	text	true		632	373	3	4	212	0	167
+1592767485899	219	Student - Login	200	OK	Student 1-1	text	true		632	373	3	4	219	0	174
+1592767488333	207	Student - Get Student Info	200	OK	Student 1-2	text	true		333	674	3	4	207	0	160
+1592767488677	782	Teacher - Get Exam Info	200	OK	Teacher 2-1	text	true		886	617	1	4	782	0	161
+1592767489674	214	Student - Get Student Info	200	OK	Student 1-3	text	true		333	674	3	4	214	0	161
+1592767493755	385	Teacher - Get Monitor Info	200	OK	Teacher 2-1	text	true		90715	598	1	4	245	0	161
+1592767494875	212	Student - Get Student Info	200	OK	Student 1-1	text	true		334	674	3	4	212	0	165
+1592767496246	238	Student - Request Exam	200	OK	Student 1-2	text	true		209	1268	3	4	238	0	178
+1592767499287	219	Student - Request Exam	200	OK	Student 1-3	text	true		209	1268	3	4	219	0	161
+1592767498863	985	Student - Download Exam	200	OK	Student 1-2	text	true		1060496	693	3	4	217	0	164
+1592767500293	235	Student - Request Exam	200	OK	Student 1-1	text	true		209	1269	3	4	235	0	171
+1592767501519	961	Student - Download Exam	200	OK	Student 1-3	text	true		1060496	693	3	4	244	0	197
+1592767504098	208	Student - Get Seconds to Start	200	OK	Student 1-2	text	true		423	643	3	4	208	0	162
+1592767503352	957	Student - Download Exam	200	OK	Student 1-1	text	true		1060496	693	3	4	207	0	160
+1592767509526	210	Student - Get Seconds to Start	200	OK	Student 1-3	text	true		423	643	3	4	210	0	162
+1592767511168	224	Student - Get Seconds to Start	200	OK	Student 1-1	text	true		423	643	3	4	224	0	178
+1592767550694	317	Teacher - Get Monitor Info	200	OK	Teacher 2-1	text	true		90715	598	1	4	243	0	173
+1592767481585	225	Version Check	200	OK	Student 1-1	text	true		290	154	3	4	225	0	182
+1592767481854	209	Teacher - Login	200	OK	Teacher 2-1	text	true		718	287	1	4	209	0	164
+1592767483089	536	Version Check	200	OK	Student 1-3	text	true		290	154	3	4	536	0	491
+1592767483969	219	Student - Login	200	OK	Student 1-2	text	true		632	373	3	4	219	0	168
+1592767486535	208	Student - Login	200	OK	Student 1-3	text	true		632	373	3	4	208	0	163
+1592767486761	210	Student - Get Student Info	200	OK	Student 1-2	text	true		333	674	3	4	210	0	162
+1592767487206	210	Student - Login	200	OK	Student 1-1	text	true		632	373	3	4	210	0	162
+1592767489646	988	Teacher - Get Exam Info	200	OK	Teacher 2-1	text	true		886	617	1	4	988	0	166
+1592767490637	209	Student - Get Student Info	200	OK	Student 1-3	text	true		333	674	3	4	209	0	161
+1592767490964	208	Student - Get Student Info	200	OK	Student 1-1	text	true		334	674	3	4	208	0	161
+1592767493054	221	Student - Request Exam	200	OK	Student 1-3	text	true		209	1268	3	4	221	0	161
+1592767493835	220	Student - Request Exam	200	OK	Student 1-2	text	true		209	1268	3	4	220	0	162
+1592767493935	381	Teacher - Get Monitor Info	200	OK	Teacher 2-1	text	true		90715	598	1	4	230	0	162
+1592767494889	252	Student - Request Exam	200	OK	Student 1-1	text	true		209	1269	3	4	252	0	185
+1592767499068	1083	Student - Download Exam	200	OK	Student 1-2	text	true		1060496	693	3	4	217	0	170
+1592767501138	1008	Student - Download Exam	200	OK	Student 1-1	text	true		1060496	693	3	4	251	0	202
+1592767501625	971	Student - Download Exam	200	OK	Student 1-3	text	true		1060496	693	3	4	252	0	200
+1592767504742	213	Student - Get Seconds to Start	200	OK	Student 1-2	text	true		423	643	3	4	213	0	168
+1592767506793	213	Student - Get Seconds to Start	200	OK	Student 1-1	text	true		423	643	3	4	213	0	167
+1592767508542	285	Student - Get Seconds to Start	200	OK	Student 1-3	text	true		423	643	3	4	284	0	234
+1592767561326	465	Student - Submit Response	200	OK	Student 1-3	text	true		488	44756	3	4	465	0	232
+1592767480949	225	Teacher - Login	200	OK	Teacher 2-1	text	true		718	287	1	4	225	0	179
+1592767482343	220	Version Check	200	OK	Student 1-2	text	true		290	154	3	4	220	0	176
+1592767483353	211	Version Check	200	OK	Student 1-1	text	true		290	154	3	4	210	0	168
+1592767486056	207	Student - Login	200	OK	Student 1-3	text	true		632	373	3	4	207	0	162
+1592767487396	845	Teacher - Get Exam Info	200	OK	Teacher 2-1	text	true		886	617	1	4	844	0	162
+1592767488463	217	Student - Login	200	OK	Student 1-1	text	true		632	373	3	4	217	0	171
+1592767489944	208	Student - Login	200	OK	Student 1-2	text	true		632	373	3	4	208	0	163
+1592767491237	46	Student - Get Student Info	200	OK	Student 1-2	text	true		333	674	3	4	46	0	0
+1592767491519	208	Student - Get Student Info	200	OK	Student 1-3	text	true		333	674	3	4	208	0	161
+1592767491406	344	Teacher - Get Monitor Info	200	OK	Teacher 2-1	text	true		90715	598	1	4	230	0	163
+1592767492886	210	Student - Get Student Info	200	OK	Student 1-1	text	true		334	674	3	4	210	0	163
+1592767496572	222	Student - Request Exam	200	OK	Student 1-2	text	true		209	1268	3	4	222	0	162
+1592767497567	219	Student - Request Exam	200	OK	Student 1-1	text	true		209	1269	3	4	219	0	161
+1592767497779	228	Student - Request Exam	200	OK	Student 1-3	text	true		209	1268	3	4	228	0	164
+1592767500315	941	Student - Download Exam	200	OK	Student 1-2	text	true		1060496	693	3	4	213	0	166
+1592767502637	979	Student - Download Exam	200	OK	Student 1-3	text	true		1060496	693	3	4	214	0	161
+1592767503627	934	Student - Download Exam	200	OK	Student 1-1	text	true		1060496	693	3	4	212	0	165
+1592767508854	206	Student - Get Seconds to Start	200	OK	Student 1-1	text	true		423	643	3	4	206	0	160
+1592767509122	216	Student - Get Seconds to Start	200	OK	Student 1-2	text	true		423	643	3	4	216	0	171
+1592767511820	204	Student - Get Seconds to Start	200	OK	Student 1-3	text	true		423	643	3	4	204	0	160
+1592767562652	328	Teacher - Get Monitor Info	200	OK	Teacher 2-1	text	true		90715	598	1	4	252	0	176
+1592767564389	384	Student - Submit Response	200	OK	Student 1-1	text	true		488	44757	2	3	384	0	160
+1592767572683	390	Student - Submit Response	200	OK	Student 1-2	text	true		488	44756	1	2	390	0	164
+1592767574197	381	Teacher - Get Monitor Info	200	OK	Teacher 2-1	text	true		90715	598	1	1	269	0	188
+1592767482064	1750	[Teacher Dashboard]	200	Number of samples in transaction : 3, number of failing samples : 0	Teacher 2-1		true		182316	1813	1	1	1487	90765	516
+1592767483086	1484	[Teacher Dashboard]	200	Number of samples in transaction : 3, number of failing samples : 0	Teacher 2-1		true		182316	1813	1	4	1270	66521	495
+1592767565864	390	Student - Submit Response	200	OK	Student 1-3	text	true		488	44756	3	3	390	0	165
+1592767573562	387	Student - Submit Response	200	OK	Student 1-1	text	true		488	44757	2	2	386	0	161
+1592767575635	392	Student - Submit Response	200	OK	Student 1-2	text	true		488	44756	1	1	392	0	168
+1592767481176	1517	[Teacher Dashboard]	200	Number of samples in transaction : 3, number of failing samples : 0	Teacher 2-1		true		182316	1813	1	4	1326	80325	501
+1592767568123	387	Student - Submit Response	200	OK	Student 1-2	text	true		488	44756	3	3	387	0	162
+1592767576061	416	Student - Submit Response	200	OK	Student 1-3	text	true		488	44756	2	2	416	0	194
+1592767581573	384	Student - Submit Response	200	OK	Student 1-1	text	true		488	44757	1	1	384	0	161

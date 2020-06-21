@@ -1,0 +1,10 @@
+timeStamp	elapsed	label	responseCode	responseMessage	threadName	dataType	success	failureMessage	bytes	sentBytes	grpThreads	allThreads	Latency	IdleTime	Connect
+1592763930174	112	HTTP Request	200	OK	Thread Group 1-1	text	true		14086	117	1	1	109	0	52
+1592763930399	79	HTTP Request	200	OK	Thread Group 1-1	text	true		14057	117	1	1	76	0	22
+1592763930708	75	HTTP Request	200	OK	Thread Group 1-1	text	true		14109	117	1	1	75	0	23
+1592766923971	135	HTTP Request	200	OK	Thread Group 1-1	text	true		14115	117	1	1	134	0	76
+1592766924275	84	HTTP Request	200	OK	Thread Group 1-1	text	true		14124	117	1	1	84	0	27
+1592766924519	88	HTTP Request	200	OK	Thread Group 1-1	text	true		14105	117	1	1	88	0	17
+1592767060948	67	HTTP Request	200	OK	Thread Group 1-1	text	true		14094	117	1	1	66	0	11
+1592767061171	76	HTTP Request	200	OK	Thread Group 1-1	text	true		14067	117	1	1	76	0	16
+1592767061502	93	HTTP Request	200	OK	Thread Group 1-1	text	true		14060	117	1	1	93	0	37
